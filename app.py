@@ -4,10 +4,10 @@ from markupsafe import escape
 from os import urandom
 #from newsapi import NewsApiClient
 
-#newsapi = NewsApiClient(api_key='3c24b5f2b3144882a655af7e0bd52fa7')
+#newsapi = NewsApiClient(api_key='')
 
 
-conn=ibm_db.connect("DATABASE=bludb;HOSTNAME=824dfd4d-99de-440d-9991-629c01b3832d.bs2io90l08kqb1od8lcg.databases.appdomain.cloud;PORT=30119;SECURITY=SSL;SSLServerCertificate=DigiCertGlobalRootCA.crt;UID=bqw81992;PWD=fEqs8mKciKoCvTJF;",'','')
+conn=ibm_db.connect("DATABASE=;HOSTNAME=;PORT=;SECURITY=;SSLServerCertificate=;UID=;PWD=;",'','')
 
 app=Flask(__name__)
 app.secret_key=urandom(24)
